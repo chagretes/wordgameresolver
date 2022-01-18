@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\FELCh\\.nuget\\packages\\": {}
+    "/home/chagretes/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FELCh\\OneDrive\\Documentos\\Codes\\forca\\forca.csproj",
+      "projectUniqueName": "/home/chagretes/Codes/wordgameresolver/forca.csproj",
       "projectName": "forca",
-      "projectPath": "C:\\Users\\FELCh\\OneDrive\\Documentos\\Codes\\forca\\forca.csproj",
-      "packagesPath": "C:\\Users\\FELCh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FELCh\\OneDrive\\Documentos\\Codes\\forca\\obj\\",
+      "projectPath": "/home/chagretes/Codes/wordgameresolver/forca.csproj",
+      "packagesPath": "/home/chagretes/.nuget/packages/",
+      "outputPath": "/home/chagretes/Codes/wordgameresolver/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\FELCh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/chagretes/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/opt/dotnet/sdk/5.0.207/RuntimeIdentifierGraph.json"
       }
     }
   }

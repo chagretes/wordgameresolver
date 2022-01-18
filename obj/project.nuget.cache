@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tAxKqL4wvIl52mYFSMAGk0pDt1bz54YoRB64t1G3lPbwchXRozAV1ClPN0Nkx3w1OPo1yTSbx8eQ4tucOxOxyQ==",
+  "dgSpecHash": "V+AONcXZlkiAChHk3n6CXFMCweH7iD1IUzZLAIlu2Z0wxaqpCRDoTl6csjgf1oTMRxihkO/7wuDEZuvWplP1Zw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FELCh\\OneDrive\\Documentos\\Codes\\forca\\forca.csproj",
+  "projectFilePath": "/home/chagretes/Codes/wordgameresolver/forca.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

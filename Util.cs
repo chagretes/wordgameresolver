@@ -24,7 +24,7 @@ namespace forca {
                 str = str.Replace("\\s+$", "");
                 /** Troca os espaços duplicados, tabulações e etc por " " **/
                 str = str.Replace("\\s+", " ");
-                return str;
+                return str.ToLower();
             }
     }
 }
