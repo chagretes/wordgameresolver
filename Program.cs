@@ -8,6 +8,7 @@ namespace forca
     class Program
     {
         private static List<string> palavras;
+        private static int palavrasFeitas = 0;
 
         static void Main(string[] args)
         {
@@ -21,32 +22,33 @@ namespace forca
         {
             var minMean = decimal.MaxValue;
             var bestWord = "";
-            foreach (var palavra in palavras)
+            palavras.AsParallel().ForAll( palavra =>
             {
-                var meanSteps = palavras.Average(x => solveForAll(x));
+                Console.WriteLine("Porcentagem: " + palavrasFeitas + "/" + palavras.Count);
+                var meanSteps = solveForAll(palavra);
                 if (meanSteps < minMean)
                 {
                     bestWord = palavra;
                     minMean = meanSteps;
                 }
-            }
+                palavrasFeitas++;
+            });
             return bestWord;
         }
 
         private static decimal solveForAll(string palavra)
         {
-            return new[] { "termo", "teste" }.Average(x => solve(x, palavra));
+            return palavras.AsParallel().Average(x => solve(x, palavra));
         }
 
         private static decimal solve(string enigma, string palavra)
         {
             var posiblesWords = palavras;
-            for (var step = 1; step <= 6; step++)
+            for (var step = 1; step <= 100; step++)
             {
                 var guessResult = guess(enigma, palavra);
                 if(guessResult.Sum() == 10)
                 {
-                    Console.WriteLine("Enigma: {0} - Step: {1}", palavra, step);
                     return step;
                 }
                 posiblesWords = posiblesWords.Where(x => !x.Equals(palavra)).ToList();
@@ -68,7 +70,6 @@ namespace forca
                     }
                 };
                 palavra = posiblesWords.First();
-                Console.WriteLine(palavra);
             }
             return  -1;
         }
