@@ -1,0 +1,16 @@
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\bin\Debug\net5.0\forca.exe
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\bin\Debug\net5.0\forca.deps.json
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\bin\Debug\net5.0\forca.runtimeconfig.json
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\bin\Debug\net5.0\forca.runtimeconfig.dev.json
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\bin\Debug\net5.0\forca.dll
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\bin\Debug\net5.0\ref\forca.dll
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\bin\Debug\net5.0\forca.pdb
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\obj\Debug\net5.0\forca.csproj.AssemblyReference.cache
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\obj\Debug\net5.0\forca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\obj\Debug\net5.0\forca.AssemblyInfoInputs.cache
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\obj\Debug\net5.0\forca.AssemblyInfo.cs
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\obj\Debug\net5.0\forca.csproj.CoreCompileInputs.cache
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\obj\Debug\net5.0\forca.dll
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\obj\Debug\net5.0\ref\forca.dll
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\obj\Debug\net5.0\forca.pdb
+C:\Users\FELCh\OneDrive\Documentos\Codes\forca\obj\Debug\net5.0\forca.genruntimeconfig.cache
