@@ -13,9 +13,9 @@ namespace forca
         static void Main(string[] args)
         {
             palavras = File.ReadAllText("dicionario5.txt").Split('\n').ToList();
-            var letras = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
             palavras = palavras.Select(x => Util.ObterStringSemAcentosECaracteresEspeciais(x)).ToList();
             var palavraIdeal = findBestWord(palavras);
+            Console.WriteLine(palavraIdeal);
         }
 
         private static string findBestWord(List<string> palavras)
@@ -30,6 +30,7 @@ namespace forca
                 {
                     bestWord = palavra;
                     minMean = meanSteps;
+                    Console.WriteLine("Palavra: {0} - Média: {1}", bestWord, minMean);
                 }
                 palavrasFeitas++;
             });
@@ -61,6 +62,7 @@ namespace forca
                             break;
                         case 1:
                             posiblesWords = posiblesWords.Where(y => y.Contains(palavra[i])).ToList();
+                            posiblesWords = posiblesWords.Where(y => y[i] != palavra[i]).ToList();
                             break;
                         case 0:
                             posiblesWords = posiblesWords.Where(y => !y.Contains(palavra[i])).ToList();
