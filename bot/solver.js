@@ -20,6 +20,7 @@ function nextWord(guess, lastWord){
             case 1:
                 palavras = palavras.filter(x => x.includes(lastWord[i]));
                 palavras = palavras.filter(x => x[i] !== lastWord[i]);
+                checked.push(lastWord[i]);
                 break;
             default:
                 palavras = palavras.filter(x => x[i] === lastWord[i]);
