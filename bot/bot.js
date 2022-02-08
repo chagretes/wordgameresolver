@@ -60,8 +60,10 @@ const now  =  new Date();
     const stats = await page.evaluate(() => window._shared);
     console.log(stats);
     //TWEET
-    //twirerBot.tweet(stats);
+    twirerBot.tweet(stats);
     //UPDATE README
     fs.appendFileSync('../README.md', '\n## '+date.format(now,'DD/MM/YYYY')+'\n![image](bot/screenshots/'+date.format(now,'DDMMYYYY')+'.png)');
+    const { execSync } = require('child_process');
+    execSync('git add ../README.md && git commit -m "Update Progress" && git push');
     await browser.close();
 })();
