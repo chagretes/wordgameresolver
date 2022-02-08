@@ -18,11 +18,9 @@ Este projeto foi feito como um bot que acessa o site term.ooo, utilizando [puppe
 
 Para a execução correta dele é necessário configurar corretamente as chaves do twitter no arquivo `tweet.js`
 
-## 07/02/2022
-![image](bot/screenshots/070222.png)
-
 ## 06/02/2022
-![image](bot/screenshots/060222.png)
-
-## 05/02/2022
-![image](bot/screenshots/050222.png)
+![image](bot/screenshots/06022022.png)
+## 07/02/2022
+![image](bot/screenshots/07022022.png)
+## 08/02/2022
+![image](bot/screenshots/08022022.png)
