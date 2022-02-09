@@ -64,6 +64,6 @@ const now  =  new Date();
     //UPDATE README
     fs.appendFileSync('../README.md', '\n## '+date.format(now,'DD/MM/YYYY')+'\n![image](bot/screenshots/'+date.format(now,'DDMMYYYY')+'.png)');
     const { execSync } = require('child_process');
-    execSync('git add ../README.md && git commit -m "Update Progress" && git push');
+    execSync('git add ../README.md && git add ./screenshots/* && git commit -m "Update Progress" && git push');
     await browser.close();
 })();
