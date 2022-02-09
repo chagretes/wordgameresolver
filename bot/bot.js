@@ -47,7 +47,7 @@ const now  =  new Date();
     {
         const targetPage = page;
         await targetPage.keyboard.press("Enter");
-        await targetPage.screenshot({path: 'screenshots/'+date.format(now,'DDMMYYYY')+'.png'});
+        await targetPage.screenshot({path: __dirname+'/screenshots/'+date.format(now,'DDMMYYYY')+'.png'});
         await targetPage.waitForTimeout(2000);
     }
 
@@ -62,8 +62,8 @@ const now  =  new Date();
     //TWEET
     twirerBot.tweet(stats);
     //UPDATE README
-    fs.appendFileSync('../README.md', '\n## '+date.format(now,'DD/MM/YYYY')+'\n![image](bot/screenshots/'+date.format(now,'DDMMYYYY')+'.png)');
+    fs.appendFileSync(__dirname+'/../README.md', '\n## '+date.format(now,'DD/MM/YYYY')+'\n![image](bot/screenshots/'+date.format(now,'DDMMYYYY')+'.png)');
     const { execSync } = require('child_process');
-    execSync('git add ../README.md && git add ./screenshots/* && git commit -m "Update Progress" && git push');
+    execSync('cd '+__dirname+ ' && git add ../README.md && git add ./screenshots/* && git commit -m "Update Progress" && git push');
     await browser.close();
 })();

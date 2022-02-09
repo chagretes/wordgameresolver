@@ -2,7 +2,7 @@ var fs = require('fs')
 
 let palavras = [];
 
-fs.readFile('dicionario5.txt', 'utf8', function(err, data) {
+fs.readFile(__dirname+'/dicionario5.txt', 'utf8', function(err, data) {
     if (err) throw err;
     console.log('OK: ');
     palavras = data.split('\n');
@@ -27,7 +27,6 @@ function nextWord(guess, lastWord){
                 checked.push(lastWord[i]);
                 break;
         }
-        
     }
 
     return palavras[0];
