@@ -24,3 +24,5 @@ Para a execução correta dele é necessário configurar corretamente as chaves 
 ![image](bot/screenshots/07022022.png)
 ## 08/02/2022
 ![image](bot/screenshots/08022022.png)
+## 09/02/2022
+![image](bot/screenshots/09022022.png)
