@@ -20,8 +20,7 @@ const now  =  new Date();
         promises.push(targetPage.waitForNavigation());
         await targetPage.goto('https://term.ooo/');
         await Promise.all(promises);
-        const element = await helper.waitForSelectors([["#helpclose"]], targetPage, timeout);
-        await element.click({ offset: { x: 8.390625, y: 26.65625} });
+        targetPage.keyboard.press("Escape");
     }
     {
         const targetPage = page;
