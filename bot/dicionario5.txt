@@ -6,7 +6,6 @@ aires
 alair
 alceu
 algol
-aline
 alpes
 amapa
 andre
@@ -35,15 +34,12 @@ cesar
 dafne
 darci
 dario
-david
-denis
 diana
 dacia
 edgar
 edite
 egito
 elias
-elisa
 elixa
 emaus
 esopo
