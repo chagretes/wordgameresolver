@@ -9,7 +9,10 @@ fs.readFile(__dirname+'/dicionario5.txt', 'utf8', function(err, data) {
 });
 
 function nextWord(guess, lastWord){
+    //Palavra encontrada
     if (guess.reduce((x,y)=>x+y) === 10) { return null;}
+    //Palavra fora do dicionario
+    if(guess[0]===null) { return palavras.shift(); }
     let checked = [];
     for (let i = 0; i < guess.length; i++) {
         const result = guess[i];
@@ -28,8 +31,7 @@ function nextWord(guess, lastWord){
                 break;
         }
     }
-
-    return palavras[0];
+    return palavras.shift();
 }
 
 module.exports = {nextWord};

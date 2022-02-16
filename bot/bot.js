@@ -33,9 +33,15 @@ const now  =  new Date();
             const row = Array.from(document.querySelectorAll(".row")[index].querySelectorAll('div'));
             return  row.map(x=> {
               if (x.className==='letter wrong') return 0;
-              else return x.className==='letter place'? 1:2;
+              else if(x.className==='letter place') return 1
+              else return x.className==='letter empty' ? null : 2;
             });
           },index);
+          if(guess[0]===null){
+            //Palavra fora do dicionario
+            index--;
+            for(let i=0;i<5;i++) targetPage.keyboard.press("Backspace");
+          } 
           word = solver.nextWord(guess, word);
           if (word===null) break;
           await targetPage.keyboard.type(word);
