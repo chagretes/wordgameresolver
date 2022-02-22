@@ -13,7 +13,14 @@ function nextWord(guess, lastWord){
     if (guess.reduce((x,y)=>x+y) === 10) { return null;}
     //Palavra fora do dicionario
     if(guess[0]===null) { return palavras.shift(); }
+
     let checked = [];
+    for (let i = 0; i < guess.length; i++) {
+        if (guess[i]!=0) {
+            checked.push(lastWord[i]);
+        }
+    }
+
     for (let i = 0; i < guess.length; i++) {
         const result = guess[i];
         switch (result) {
@@ -23,11 +30,9 @@ function nextWord(guess, lastWord){
             case 1:
                 palavras = palavras.filter(x => x.includes(lastWord[i]));
                 palavras = palavras.filter(x => x[i] !== lastWord[i]);
-                checked.push(lastWord[i]);
                 break;
             default:
                 palavras = palavras.filter(x => x[i] === lastWord[i]);
-                checked.push(lastWord[i]);
                 break;
         }
     }

@@ -30,7 +30,13 @@ const now  =  new Date();
         await targetPage.waitForTimeout(2000);
         for (let index = 0; index < 5; index++) {
           const guess = await page.evaluate((index) => {
-            const row = Array.from(document.querySelectorAll(".row")[index].querySelectorAll('div'));
+            //Versão pré 20/02
+            //const row = Array.from(document.querySelectorAll(".row")[index].querySelectorAll('div'));
+            
+            //Versão pós 20/02
+            const row = Array.from(document.querySelector('wc-board').shadowRoot.children[1].children[index].shadowRoot.children);
+            row.shift();
+            
             return  row.map(x=> {
               if (x.className==='letter wrong') return 0;
               else if(x.className==='letter place') return 1
@@ -57,7 +63,7 @@ const now  =  new Date();
     }
 
     {
-      const element = await helper.waitForSelectors([["#stats_share"]], page, timeout);
+      const element = await helper.waitForSelectors([["aria/compartilhe"],["#stats","#stats_share"]], page, timeout);
       await element.click();
       await page.waitForTimeout(5000);
     }
