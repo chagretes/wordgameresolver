@@ -132,3 +132,5 @@ Para a execução correta dele é necessário configurar corretamente as chaves 
 ![image](bot/screenshots/05042022.png)
 ## 06/04/2022
 ![image](bot/screenshots/06042022.png)
+## 07/04/2022
+![image](bot/screenshots/07042022.png)
